@@ -2,11 +2,17 @@
   "name": "clerk_sync",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "scripts": {
+    "dev": "bun run index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@clerk/backend": "^2.9.4",
+    "drizzle-orm": "^0.44.4"
   }
 }
